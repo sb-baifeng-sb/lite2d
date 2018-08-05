@@ -1,0 +1,1180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\app">
+      <UniqueIdentifier>{9c10662e-c4da-4f63-b8b5-adea1316fbc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{732e4b11-c0a9-4e2b-8ef3-d2b35fa434d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mediator">
+      <UniqueIdentifier>{e0ca789c-b4bd-478f-abff-0d88926ea663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\proxy">
+      <UniqueIdentifier>{92c9808e-10e0-47fc-80ec-ebe828e97159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third">
+      <UniqueIdentifier>{2d38d49a-142c-42bd-9882-9c214bc630ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view">
+      <UniqueIdentifier>{105d5c97-72d8-4693-8f04-513fed950a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{54a0be39-5a38-413e-985e-85ca41cafbe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\UI">
+      <UniqueIdentifier>{928358be-f30d-40df-aeb0-b46810bb678c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\bftools">
+      <UniqueIdentifier>{5d7e1ce6-b4a5-445d-8edc-d9420b0fca6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal">
+      <UniqueIdentifier>{531d3673-ae40-4c41-80a5-7637866c3bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\archives">
+      <UniqueIdentifier>{22432aa7-c464-4236-84a4-ec6ea15797c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\details">
+      <UniqueIdentifier>{6c770705-a2ab-4274-86fc-4ea10ff1a672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\external">
+      <UniqueIdentifier>{54ce5a9d-e113-4b85-9fd6-e48491831ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\types">
+      <UniqueIdentifier>{0c67519e-9ab0-4353-ac81-b29dcdf45413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\external\rapidjson">
+      <UniqueIdentifier>{97850b62-1e9a-41a0-841c-f8c2d023c397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\external\rapidxml">
+      <UniqueIdentifier>{30f580c5-91ef-4c96-9dee-25211e808047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\external\rapidjson\error">
+      <UniqueIdentifier>{2ffa0617-3369-43df-8e76-4a6a792d181e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\external\rapidjson\internal">
+      <UniqueIdentifier>{6aa6fc48-73f9-4c68-af61-91e388d23dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\cereal\external\rapidjson\msinttypes">
+      <UniqueIdentifier>{8d6ba00f-eae2-4f75-b9ff-5751ba9996b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones">
+      <UniqueIdentifier>{94f28db8-3e63-4a06-a50f-030e6dfab15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\animation">
+      <UniqueIdentifier>{2fe2b5ad-b905-41f1-9b53-f5a4fad0cf39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\armature">
+      <UniqueIdentifier>{98de947e-8ff6-4d67-9ca4-1ace19c8057d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\cocos2dx">
+      <UniqueIdentifier>{69bfdf77-ad8a-45a4-a865-d52024286879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\core">
+      <UniqueIdentifier>{74c322e4-2ef4-4d71-b5c4-8afa76ee1454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\event">
+      <UniqueIdentifier>{f32ce55d-820e-443d-a92b-4c034d87e2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\factory">
+      <UniqueIdentifier>{29754112-159a-44bb-8c62-af3bda761f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\geom">
+      <UniqueIdentifier>{7d64fe90-b676-4e6c-8a8c-41c9d658bafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\model">
+      <UniqueIdentifier>{a06234a9-3cef-440d-9752-6f78695dd809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\dragonBones\parser">
+      <UniqueIdentifier>{93bf3efa-94a7-4f21-ad31-958903396bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\easySQLite">
+      <UniqueIdentifier>{8abed2e2-1ea3-4938-bf29-0c8b65ef2bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\enity">
+      <UniqueIdentifier>{18bda17e-4b8e-4726-9ee1-2f1b11a09f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\Gif">
+      <UniqueIdentifier>{6f9f774f-2989-4e14-a5fa-e1d3d5ad7260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\Gif\gif_lib">
+      <UniqueIdentifier>{416b0c81-1f65-4663-9c35-b9e5539b9aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\micropather">
+      <UniqueIdentifier>{5fe34b5c-253f-4143-8f6e-da03366b9e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\obs">
+      <UniqueIdentifier>{b6c8facf-fd07-43f4-9884-cb61a22b3200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\obs\source">
+      <UniqueIdentifier>{30e260c2-91f4-48ef-8aee-36b5710acb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\puremvc">
+      <UniqueIdentifier>{1fd1f8ba-cb05-47d8-a11c-fe46d9b459cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\rapidjson">
+      <UniqueIdentifier>{a88d2cf2-6c18-4823-ab4b-d35575057805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\rapidjson\error">
+      <UniqueIdentifier>{9cfc09c7-5500-477b-841a-5b0d9136f1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\rapidjson\internal">
+      <UniqueIdentifier>{a19408ad-0e7a-4154-bc8e-d27f65067d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\rapidjson\msinttypes">
+      <UniqueIdentifier>{3cf83e13-5561-42d4-a96f-24a281feb7f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\third\tea">
+      <UniqueIdentifier>{e296f13b-38fe-4629-992b-fde6e76b4bfd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\app\App.cpp">
+      <Filter>src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\actions.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\BFTableView.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\CcbBaseView.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\CharsetConvert.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\common\TouchEventRef.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mediator\StageMediator.cpp">
+      <Filter>src\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tools\jsengine.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tools\jssugar.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tools\script.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\BFImageView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\ButtonView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\CcbUiView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\DragonBonesView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\GifView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\MovieView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\SpeakView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\Sprite.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\SpriteStackView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\TextView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\AlertDialogView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\BacklogView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\CGLibraryView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\GameDataMgrView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\GameMenuView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\GameOptionView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\MovieLibraryView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\view\UI\MusicLibraryView.cpp">
+      <Filter>src\view\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\BacklogProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\ConfigProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\DragonBonesFactory.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\JSApiRegisterFunc.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\JSApis.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\KvProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\MediaProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\ResProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\SaveProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\SqlProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\proxy\StoryScriptProxy.cpp">
+      <Filter>src\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\bftools\archives.cpp">
+      <Filter>src\third\bftools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\bftools\pack.cpp">
+      <Filter>src\third\bftools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\bftools\parseini.cpp">
+      <Filter>src\third\bftools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\bftools\simpleapi.cpp">
+      <Filter>src\third\bftools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\animation\Animation.cpp">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\animation\AnimationState.cpp">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\animation\BaseTimelineState.cpp">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\animation\TimelineState.cpp">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\animation\WorldClock.cpp">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Armature.cpp">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Bone.cpp">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Constraint.cpp">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\armature\DeformVertices.cpp">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Slot.cpp">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\armature\TransformObject.cpp">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCArmatureDisplay.cpp">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCFactory.cpp">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCSlot.cpp">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCTextureAtlasData.cpp">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\core\BaseObject.cpp">
+      <Filter>src\third\dragonBones\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\core\DragonBones.cpp">
+      <Filter>src\third\dragonBones\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\event\EventObject.cpp">
+      <Filter>src\third\dragonBones\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\factory\BaseFactory.cpp">
+      <Filter>src\third\dragonBones\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\geom\Point.cpp">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\geom\Transform.cpp">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\AnimationConfig.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\AnimationData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\ArmatureData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\BoundingBoxData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\CanvasData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\ConstraintData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\DisplayData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\DragonBonesData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\SkinData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\TextureAtlasData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\model\UserData.cpp">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\parser\BinaryDataParser.cpp">
+      <Filter>src\third\dragonBones\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\parser\DataParser.cpp">
+      <Filter>src\third\dragonBones\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\dragonBones\parser\JSONDataParser.cpp">
+      <Filter>src\third\dragonBones\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SHA1.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlCommon.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlDatabase.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlField.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlFieldSet.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\sqlite3.c">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlRecord.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlRecordSet.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlTable.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\easySQLite\SqlValue.cpp">
+      <Filter>src\third\easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\entity\component.cpp">
+      <Filter>src\third\enity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\entity\entity.cpp">
+      <Filter>src\third\enity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\entity\event.cpp">
+      <Filter>src\third\enity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\entity\system.cpp">
+      <Filter>src\third\enity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\entity\world.cpp">
+      <Filter>src\third\enity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\Bitmap.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\CacheGif.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\CacheGifData.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\FileData.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\GifBase.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\GifMovie.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\GifMovieData.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\InstantGif.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\InstantGifData.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\Movie.cpp">
+      <Filter>src\third\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\dgif_lib.c">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gif_err.c">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gif_font.c">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gif_hash.c">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gifalloc.c">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\quantize.c">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\micropather\dungeon.cpp">
+      <Filter>src\third\micropather</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\micropather\micropather.cpp">
+      <Filter>src\third\micropather</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\micropather\speed.cpp">
+      <Filter>src\third\micropather</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\obs\source\connection.cpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\puremvc\pmvcpp.cpp">
+      <Filter>src\third\puremvc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\third\tea\TEA_Encrypt.c">
+      <Filter>src\third\tea</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\app\App.hpp">
+      <Filter>src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\app\macros.h">
+      <Filter>src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\app\notify.hpp">
+      <Filter>src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\app\Register.hpp">
+      <Filter>src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\actions.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\BFTableView.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CcbBaseView.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\CharsetConvert.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\TouchEventRef.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mediator\StageMediator.hpp">
+      <Filter>src\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tools\jsengine.hpp">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tools\script.hpp">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\BFImageView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\ButtonView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\CcbUiView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\DragonBonesView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\GifView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\MovieView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\SpeakView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\Sprite.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\SpriteStackView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\TextView.hpp">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\AlertDialogView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\BacklogView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\CGLibraryView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\GameDataMgrView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\GameMenuView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\GameOptionView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\MovieLibraryView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\view\UI\MusicLibraryView.hpp">
+      <Filter>src\view\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\BacklogProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\ConfigProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\DragonBonesFactory.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\JSApiRegisterFunc.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\JSApis.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\KvProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\MediaProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\ResProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\SaveProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\SqlProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\proxy\StoryScriptProxy.hpp">
+      <Filter>src\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\bftools\archives.hpp">
+      <Filter>src\third\bftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\bftools\macros.h">
+      <Filter>src\third\bftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\bftools\pack.hpp">
+      <Filter>src\third\bftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\bftools\parseini.hpp">
+      <Filter>src\third\bftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\bftools\simpleapi.hpp">
+      <Filter>src\third\bftools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\access.hpp">
+      <Filter>src\third\cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\cereal.hpp">
+      <Filter>src\third\cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\macros.hpp">
+      <Filter>src\third\cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\archives\adapters.hpp">
+      <Filter>src\third\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\archives\binary.hpp">
+      <Filter>src\third\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\archives\json.hpp">
+      <Filter>src\third\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\archives\portable_binary.hpp">
+      <Filter>src\third\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\archives\xml.hpp">
+      <Filter>src\third\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\details\helpers.hpp">
+      <Filter>src\third\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\details\polymorphic_impl.hpp">
+      <Filter>src\third\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\details\polymorphic_impl_fwd.hpp">
+      <Filter>src\third\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\details\static_object.hpp">
+      <Filter>src\third\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\details\traits.hpp">
+      <Filter>src\third\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\details\util.hpp">
+      <Filter>src\third\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\base64.hpp">
+      <Filter>src\third\cereal\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml.hpp">
+      <Filter>src\third\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml_iterators.hpp">
+      <Filter>src\third\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml_print.hpp">
+      <Filter>src\third\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml_utils.hpp">
+      <Filter>src\third\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\allocators.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\document.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\encodedstream.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\encodings.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\filereadstream.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\filewritestream.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\fwd.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\istreamwrapper.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\memorybuffer.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\memorystream.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\ostreamwrapper.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\pointer.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\prettywriter.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\rapidjson.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\reader.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\schema.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\stream.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\stringbuffer.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\writer.h">
+      <Filter>src\third\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\error\en.h">
+      <Filter>src\third\cereal\external\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\error\error.h">
+      <Filter>src\third\cereal\external\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\biginteger.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\diyfp.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\dtoa.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\ieee754.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\itoa.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\meta.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\pow10.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\regex.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\stack.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\strfunc.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\strtod.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\swap.h">
+      <Filter>src\third\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\msinttypes\inttypes.h">
+      <Filter>src\third\cereal\external\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\msinttypes\stdint.h">
+      <Filter>src\third\cereal\external\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\DragonBonesHeaders.h">
+      <Filter>src\third\dragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\animation\Animation.h">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\animation\AnimationState.h">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\animation\BaseTimelineState.h">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\animation\IAnimatable.h">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\animation\TimelineState.h">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\animation\WorldClock.h">
+      <Filter>src\third\dragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Armature.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Bone.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Constraint.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\DeformVertices.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\IArmatureProxy.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Slot.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\armature\TransformObject.h">
+      <Filter>src\third\dragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCArmatureDisplay.h">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCDragonBonesHeaders.h">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCFactory.h">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCSlot.h">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCTextureAtlasData.h">
+      <Filter>src\third\dragonBones\cocos2dx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\core\BaseObject.h">
+      <Filter>src\third\dragonBones\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\core\DragonBones.h">
+      <Filter>src\third\dragonBones\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\event\EventObject.h">
+      <Filter>src\third\dragonBones\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\event\IEventDispatcher.h">
+      <Filter>src\third\dragonBones\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\factory\BaseFactory.h">
+      <Filter>src\third\dragonBones\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\geom\ColorTransform.h">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Matrix.h">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Point.h">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Rectangle.h">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Transform.h">
+      <Filter>src\third\dragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\AnimationConfig.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\AnimationData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\ArmatureData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\BoundingBoxData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\CanvasData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\ConstraintData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\DisplayData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\DragonBonesData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\SkinData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\TextureAtlasData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\model\UserData.h">
+      <Filter>src\third\dragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\parser\BinaryDataParser.h">
+      <Filter>src\third\dragonBones\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\parser\DataParser.h">
+      <Filter>src\third\dragonBones\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\dragonBones\parser\JSONDataParser.h">
+      <Filter>src\third\dragonBones\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\easySqlite.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SHA1.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlCommon.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlDatabase.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlField.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlFieldSet.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\sqlite3.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlRecord.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlRecordSet.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlTable.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\easySQLite\SqlValue.h">
+      <Filter>src\third\easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\component.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\Config.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\entity.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\event.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\pool.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\system.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\entity\world.hpp">
+      <Filter>src\third\enity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\Bitmap.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\CacheGif.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\CacheGifData.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\FileData.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\GifBase.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\GifMacros.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\GIFMovie.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\GIFMovieData.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\GifUtils.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\InstantGif.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\InstantGifData.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\Movie.h">
+      <Filter>src\third\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\gif_lib\gif_hash.h">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\gif_lib\gif_lib.h">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\Gif\gif_lib\gif_lib_private.h">
+      <Filter>src\third\Gif\gif_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\micropather\micropather.h">
+      <Filter>src\third\micropather</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\obs.hpp">
+      <Filter>src\third\obs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\source\connection.hpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\source\observable.hpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\source\observers.hpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\source\safe_list.hpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\source\signal.hpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\obs\source\slot.hpp">
+      <Filter>src\third\obs\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\puremvc\pmvcpp.h">
+      <Filter>src\third\puremvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\allocators.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\document.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\document-wrapper.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\encodedstream.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\encodings.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\filereadstream.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\filewritestream.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\fwd.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\istreamwrapper.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\memorybuffer.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\memorystream.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\ostreamwrapper.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\pointer.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\prettywriter.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\rapidjson.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\reader.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\schema.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\stream.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\stringbuffer.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\writer.h">
+      <Filter>src\third\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\error\en.h">
+      <Filter>src\third\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\error\error.h">
+      <Filter>src\third\rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\biginteger.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\diyfp.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\dtoa.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\ieee754.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\itoa.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\meta.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\pow10.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\regex.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\stack.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\strfunc.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\strtod.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\internal\swap.h">
+      <Filter>src\third\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\msinttypes\inttypes.h">
+      <Filter>src\third\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\rapidjson\msinttypes\stdint.h">
+      <Filter>src\third\rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\third\tea\TEA_Encrypt.h">
+      <Filter>src\third\tea</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\third\entity\LICENSE">
+      <Filter>src\third\enity</Filter>
+    </None>
+    <None Include="..\Classes\third\entity\README.md">
+      <Filter>src\third\enity</Filter>
+    </None>
+  </ItemGroup>
+</Project>

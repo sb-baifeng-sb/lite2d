@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\spidermonkey\include\win32;$(EngineRoot)extensions;..\Classes\third;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);mozjs-33.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+      </Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xcopy /Y /Q "$(ProjectDir)..\cocos2d\external\spidermonkey\prebuilt\win32\*.*" "$(OutDir)"
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\spidermonkey\include\win32;$(EngineRoot)extensions;..\Classes\third;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);mozjs-33.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)..\cocos2d\external\spidermonkey\prebuilt\win32\*.*" "$(OutDir)"
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\app\App.cpp" />
+    <ClCompile Include="..\Classes\common\actions.cpp" />
+    <ClCompile Include="..\Classes\common\BFTableView.cpp" />
+    <ClCompile Include="..\Classes\common\CcbBaseView.cpp" />
+    <ClCompile Include="..\Classes\common\CharsetConvert.cpp" />
+    <ClCompile Include="..\Classes\common\TouchEventRef.cpp" />
+    <ClCompile Include="..\Classes\mediator\StageMediator.cpp" />
+    <ClCompile Include="..\Classes\proxy\BacklogProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\ConfigProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\DragonBonesFactory.cpp" />
+    <ClCompile Include="..\Classes\proxy\JSApiRegisterFunc.cpp" />
+    <ClCompile Include="..\Classes\proxy\JSApis.cpp" />
+    <ClCompile Include="..\Classes\proxy\KvProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\MediaProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\ResProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\SaveProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\SqlProxy.cpp" />
+    <ClCompile Include="..\Classes\proxy\StoryScriptProxy.cpp" />
+    <ClCompile Include="..\Classes\third\bftools\archives.cpp" />
+    <ClCompile Include="..\Classes\third\bftools\pack.cpp" />
+    <ClCompile Include="..\Classes\third\bftools\parseini.cpp" />
+    <ClCompile Include="..\Classes\third\bftools\simpleapi.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\animation\Animation.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\animation\AnimationState.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\animation\BaseTimelineState.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\animation\TimelineState.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\animation\WorldClock.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Armature.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Bone.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Constraint.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\armature\DeformVertices.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\armature\Slot.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\armature\TransformObject.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCArmatureDisplay.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCFactory.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCSlot.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\cocos2dx\CCTextureAtlasData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\core\BaseObject.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\core\DragonBones.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\event\EventObject.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\factory\BaseFactory.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\geom\Point.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\geom\Transform.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\AnimationConfig.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\AnimationData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\ArmatureData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\BoundingBoxData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\CanvasData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\ConstraintData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\DisplayData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\DragonBonesData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\SkinData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\TextureAtlasData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\model\UserData.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\parser\BinaryDataParser.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\parser\DataParser.cpp" />
+    <ClCompile Include="..\Classes\third\dragonBones\parser\JSONDataParser.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SHA1.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlCommon.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlDatabase.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlField.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlFieldSet.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\sqlite3.c" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlRecord.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlRecordSet.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlTable.cpp" />
+    <ClCompile Include="..\Classes\third\easySQLite\SqlValue.cpp" />
+    <ClCompile Include="..\Classes\third\entity\component.cpp" />
+    <ClCompile Include="..\Classes\third\entity\entity.cpp" />
+    <ClCompile Include="..\Classes\third\entity\event.cpp" />
+    <ClCompile Include="..\Classes\third\entity\system.cpp" />
+    <ClCompile Include="..\Classes\third\entity\world.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\Bitmap.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\CacheGif.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\CacheGifData.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\FileData.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\GifBase.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\GifMovie.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\GifMovieData.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\dgif_lib.c" />
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gifalloc.c" />
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gif_err.c" />
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gif_font.c" />
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\gif_hash.c" />
+    <ClCompile Include="..\Classes\third\Gif\gif_lib\quantize.c" />
+    <ClCompile Include="..\Classes\third\Gif\InstantGif.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\InstantGifData.cpp" />
+    <ClCompile Include="..\Classes\third\Gif\Movie.cpp" />
+    <ClCompile Include="..\Classes\third\micropather\dungeon.cpp" />
+    <ClCompile Include="..\Classes\third\micropather\micropather.cpp" />
+    <ClCompile Include="..\Classes\third\micropather\speed.cpp" />
+    <ClCompile Include="..\Classes\third\obs\source\connection.cpp" />
+    <ClCompile Include="..\Classes\third\puremvc\pmvcpp.cpp" />
+    <ClCompile Include="..\Classes\third\tea\TEA_Encrypt.c" />
+    <ClCompile Include="..\Classes\tools\jsengine.cpp" />
+    <ClCompile Include="..\Classes\tools\jssugar.cpp" />
+    <ClCompile Include="..\Classes\tools\script.cpp" />
+    <ClCompile Include="..\Classes\view\BFImageView.cpp" />
+    <ClCompile Include="..\Classes\view\ButtonView.cpp" />
+    <ClCompile Include="..\Classes\view\CcbUiView.cpp" />
+    <ClCompile Include="..\Classes\view\DragonBonesView.cpp" />
+    <ClCompile Include="..\Classes\view\GifView.cpp" />
+    <ClCompile Include="..\Classes\view\MovieView.cpp" />
+    <ClCompile Include="..\Classes\view\SpeakView.cpp" />
+    <ClCompile Include="..\Classes\view\Sprite.cpp" />
+    <ClCompile Include="..\Classes\view\SpriteStackView.cpp" />
+    <ClCompile Include="..\Classes\view\TextView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\AlertDialogView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\BacklogView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\CGLibraryView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\GameDataMgrView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\GameMenuView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\GameOptionView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\MovieLibraryView.cpp" />
+    <ClCompile Include="..\Classes\view\UI\MusicLibraryView.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\app\App.hpp" />
+    <ClInclude Include="..\Classes\app\macros.h" />
+    <ClInclude Include="..\Classes\app\notify.hpp" />
+    <ClInclude Include="..\Classes\app\Register.hpp" />
+    <ClInclude Include="..\Classes\common\actions.hpp" />
+    <ClInclude Include="..\Classes\common\BFTableView.hpp" />
+    <ClInclude Include="..\Classes\common\CcbBaseView.hpp" />
+    <ClInclude Include="..\Classes\common\CharsetConvert.hpp" />
+    <ClInclude Include="..\Classes\common\TouchEventRef.hpp" />
+    <ClInclude Include="..\Classes\mediator\StageMediator.hpp" />
+    <ClInclude Include="..\Classes\proxy\BacklogProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\ConfigProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\DragonBonesFactory.hpp" />
+    <ClInclude Include="..\Classes\proxy\JSApiRegisterFunc.hpp" />
+    <ClInclude Include="..\Classes\proxy\JSApis.hpp" />
+    <ClInclude Include="..\Classes\proxy\KvProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\MediaProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\ResProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\SaveProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\SqlProxy.hpp" />
+    <ClInclude Include="..\Classes\proxy\StoryScriptProxy.hpp" />
+    <ClInclude Include="..\Classes\third\bftools\archives.hpp" />
+    <ClInclude Include="..\Classes\third\bftools\macros.h" />
+    <ClInclude Include="..\Classes\third\bftools\pack.hpp" />
+    <ClInclude Include="..\Classes\third\bftools\parseini.hpp" />
+    <ClInclude Include="..\Classes\third\bftools\simpleapi.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\access.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\archives\adapters.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\archives\binary.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\archives\json.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\archives\portable_binary.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\archives\xml.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\cereal.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\details\helpers.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\details\polymorphic_impl.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\details\polymorphic_impl_fwd.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\details\static_object.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\details\traits.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\details\util.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\external\base64.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\allocators.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\document.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\encodedstream.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\encodings.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\error\en.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\error\error.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\filereadstream.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\filewritestream.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\fwd.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\itoa.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\meta.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\regex.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\strtod.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\internal\swap.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\memorybuffer.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\memorystream.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\pointer.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\reader.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\schema.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\stream.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidjson\writer.h" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\external\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="..\Classes\third\cereal\macros.hpp" />
+    <ClInclude Include="..\Classes\third\dragonBones\animation\Animation.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\animation\AnimationState.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\animation\BaseTimelineState.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\animation\IAnimatable.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\animation\TimelineState.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\animation\WorldClock.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Armature.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Bone.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Constraint.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\DeformVertices.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\IArmatureProxy.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\Slot.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\armature\TransformObject.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCArmatureDisplay.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCDragonBonesHeaders.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCFactory.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCSlot.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\cocos2dx\CCTextureAtlasData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\core\BaseObject.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\core\DragonBones.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\DragonBonesHeaders.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\event\EventObject.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\event\IEventDispatcher.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\factory\BaseFactory.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\geom\ColorTransform.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Matrix.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Point.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Rectangle.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\geom\Transform.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\AnimationConfig.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\AnimationData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\ArmatureData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\BoundingBoxData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\CanvasData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\ConstraintData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\DisplayData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\DragonBonesData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\SkinData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\TextureAtlasData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\model\UserData.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\parser\BinaryDataParser.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\parser\DataParser.h" />
+    <ClInclude Include="..\Classes\third\dragonBones\parser\JSONDataParser.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\easySqlite.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SHA1.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlCommon.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlDatabase.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlField.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlFieldSet.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\sqlite3.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlRecord.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlRecordSet.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlTable.h" />
+    <ClInclude Include="..\Classes\third\easySQLite\SqlValue.h" />
+    <ClInclude Include="..\Classes\third\entity\component.hpp" />
+    <ClInclude Include="..\Classes\third\entity\Config.hpp" />
+    <ClInclude Include="..\Classes\third\entity\entity.hpp" />
+    <ClInclude Include="..\Classes\third\entity\event.hpp" />
+    <ClInclude Include="..\Classes\third\entity\pool.hpp" />
+    <ClInclude Include="..\Classes\third\entity\system.hpp" />
+    <ClInclude Include="..\Classes\third\entity\world.hpp" />
+    <ClInclude Include="..\Classes\third\Gif\Bitmap.h" />
+    <ClInclude Include="..\Classes\third\Gif\CacheGif.h" />
+    <ClInclude Include="..\Classes\third\Gif\CacheGifData.h" />
+    <ClInclude Include="..\Classes\third\Gif\FileData.h" />
+    <ClInclude Include="..\Classes\third\Gif\GifBase.h" />
+    <ClInclude Include="..\Classes\third\Gif\GifMacros.h" />
+    <ClInclude Include="..\Classes\third\Gif\GIFMovie.h" />
+    <ClInclude Include="..\Classes\third\Gif\GIFMovieData.h" />
+    <ClInclude Include="..\Classes\third\Gif\GifUtils.h" />
+    <ClInclude Include="..\Classes\third\Gif\gif_lib\gif_hash.h" />
+    <ClInclude Include="..\Classes\third\Gif\gif_lib\gif_lib.h" />
+    <ClInclude Include="..\Classes\third\Gif\gif_lib\gif_lib_private.h" />
+    <ClInclude Include="..\Classes\third\Gif\InstantGif.h" />
+    <ClInclude Include="..\Classes\third\Gif\InstantGifData.h" />
+    <ClInclude Include="..\Classes\third\Gif\Movie.h" />
+    <ClInclude Include="..\Classes\third\micropather\micropather.h" />
+    <ClInclude Include="..\Classes\third\obs\obs.hpp" />
+    <ClInclude Include="..\Classes\third\obs\source\connection.hpp" />
+    <ClInclude Include="..\Classes\third\obs\source\observable.hpp" />
+    <ClInclude Include="..\Classes\third\obs\source\observers.hpp" />
+    <ClInclude Include="..\Classes\third\obs\source\safe_list.hpp" />
+    <ClInclude Include="..\Classes\third\obs\source\signal.hpp" />
+    <ClInclude Include="..\Classes\third\obs\source\slot.hpp" />
+    <ClInclude Include="..\Classes\third\puremvc\pmvcpp.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\allocators.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\document-wrapper.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\document.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\encodedstream.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\encodings.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\error\en.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\error\error.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\filereadstream.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\filewritestream.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\fwd.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\itoa.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\meta.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\regex.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\strtod.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\internal\swap.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\memorybuffer.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\memorystream.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\pointer.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\reader.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\schema.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\stream.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\Classes\third\rapidjson\writer.h" />
+    <ClInclude Include="..\Classes\third\tea\TEA_Encrypt.h" />
+    <ClInclude Include="..\Classes\tools\jsengine.hpp" />
+    <ClInclude Include="..\Classes\tools\script.hpp" />
+    <ClInclude Include="..\Classes\view\BFImageView.hpp" />
+    <ClInclude Include="..\Classes\view\ButtonView.hpp" />
+    <ClInclude Include="..\Classes\view\CcbUiView.hpp" />
+    <ClInclude Include="..\Classes\view\DragonBonesView.hpp" />
+    <ClInclude Include="..\Classes\view\GifView.hpp" />
+    <ClInclude Include="..\Classes\view\MovieView.hpp" />
+    <ClInclude Include="..\Classes\view\SpeakView.hpp" />
+    <ClInclude Include="..\Classes\view\Sprite.hpp" />
+    <ClInclude Include="..\Classes\view\SpriteStackView.hpp" />
+    <ClInclude Include="..\Classes\view\TextView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\AlertDialogView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\BacklogView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\CGLibraryView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\GameDataMgrView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\GameMenuView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\GameOptionView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\MovieLibraryView.hpp" />
+    <ClInclude Include="..\Classes\view\UI\MusicLibraryView.hpp" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\third\entity\LICENSE" />
+    <None Include="..\Classes\third\entity\README.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
